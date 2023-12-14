@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:080064161236:task-definition/vproapp-act-tdef:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:080064161236:task-definition/vproapp-act-tdef:4",
     "containerDefinitions": [
         {
             "name": "vproapp",
@@ -7,7 +7,7 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "vproapp-80-tcp",
+                    "name": "vproapp-8080-tcp",
                     "containerPort": 8080,
                     "hostPort": 8080,
                     "protocol": "tcp",
@@ -33,9 +33,10 @@
         }
     ],
     "family": "vproapp-act-tdef",
+    "taskRoleArn": "arn:aws:iam::080064161236:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::080064161236:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 4,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -50,6 +51,9 @@
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -78,7 +82,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-12-14T04:25:27.840Z",
+    "registeredAt": "2023-12-14T10:13:41.446Z",
     "registeredBy": "arn:aws:iam::080064161236:root",
     "tags": [
         {
