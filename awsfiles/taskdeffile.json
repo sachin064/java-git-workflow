@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:080064161236:task-definition/vproapp-act-tdef:4",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:080064161236:task-definition/sample-test:1",
     "containerDefinitions": [
         {
             "name": "vproapp",
@@ -7,7 +7,7 @@
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "vproapp-8080-tcp",
+                    "name": "vpro-app-8080",
                     "containerPort": 8080,
                     "hostPort": 8080,
                     "protocol": "tcp",
@@ -24,7 +24,7 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/vproapp-act-tdef",
+                    "awslogs-group": "/ecs/sample-test",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 },
@@ -32,11 +32,10 @@
             }
         }
     ],
-    "family": "vproapp-act-tdef",
-    "taskRoleArn": "arn:aws:iam::080064161236:role/ecsTaskExecutionRole",
+    "family": "sample-test",
     "executionRoleArn": "arn:aws:iam::080064161236:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 4,
+    "revision": 1,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -51,9 +50,6 @@
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -82,12 +78,12 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-12-14T10:13:41.446Z",
+    "registeredAt": "2023-12-16T10:08:03.705Z",
     "registeredBy": "arn:aws:iam::080064161236:root",
     "tags": [
         {
-            "key": "name",
-            "value": "vproapp-act-tdef"
+            "key": "sample",
+            "value": "test"
         }
     ]
 }
