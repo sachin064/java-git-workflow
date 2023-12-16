@@ -3,10 +3,10 @@ on: workflow_dispatch
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: actapp
-  ECS_SERVICE: vproapp-act-svc
+  ECS_SERVICE: sample-test-exec
   ECS_TASK_DEFINATION: awsfiles/taskdeffile.json
-  CONTAINER_NAME: vproapp
-  ECS_CLUSTER: vpro
+  CONTAINER_NAME: vproapp	
+  ECS_CLUSTER: sample-test-123
   
 jobs:
   BUILD_AND_PUBLISH:
