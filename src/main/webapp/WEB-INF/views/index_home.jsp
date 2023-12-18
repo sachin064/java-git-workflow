@@ -28,7 +28,7 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="#technologies">TECHNOLOGIES</a></li>
                                 <li><a href="#about">ABOUT</a></li>
-                                <li><a href="#contact">CONTACT</a></li>
+                                <li><a href="#contact">SACHIN B G</a></li>
                                 <li><a href="#">BLOG</a></li>
                             </ul>
                             <div class="navbar-collapse navbar-right collapse">
