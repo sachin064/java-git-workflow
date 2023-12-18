@@ -26,7 +26,7 @@
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="#technologies">TECHNOLOGIES</a></li>
+                                <li><a href="#VISIONET SYSTEMS">TECHNOLOGIES</a></li>
                                 <li><a href="#about">ABOUT</a></li>
                                 <li><a href="#contact">SACHIN B G</a></li>
                                 <li><a href="#">BLOG</a></li>
